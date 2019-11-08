@@ -2,7 +2,7 @@
 function Pizza(size, toppings) {
   this.toppings = toppings,
   this.size = size,
-
+  this.price = 0
 }
 
 Pizza.prototype.pizzaPrice = function(price) {
@@ -17,18 +17,19 @@ Pizza.prototype.pizzaPrice = function(price) {
   } else if (this.toppings.length < 2){
     this.price += 0;
   }
+  console.log(price);
+  return price;
 }
 
-if (this)
 
 
 // Frontend Logic
 $(document).ready(function(){
-  $("#form").submit(function(event){
+  $("form#form").submit(function(event){
     event.preventDefault();
 
 
-
+// var newPizza = Pizza(size, toppings);
 
   })
 })
