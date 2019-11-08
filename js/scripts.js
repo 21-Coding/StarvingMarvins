@@ -17,8 +17,8 @@ Pizza.prototype.pizzaPrice = function(price) {
   } else if (this.toppings.length < 2){
     this.price += 0;
   }
-  console.log(price);
-  return price;
+  return pizzaPrice;
+  console.log();
 }
 
 
