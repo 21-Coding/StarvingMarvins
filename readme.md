@@ -23,7 +23,7 @@ This application gives a brief showing of the power of JavaScript's objects.
 
 ### Setup/Installation Requirements
 ##### Zip:
-![enter image description here](https://lh3.googleusercontent.com/Pg6oODU_Img63CYp_9o5a3pSDCHpcp_g9HouHiOeTiJyHu4oHIX5iVy4uRuruJjrl9X6VKZefJg=s1000 "read")
+![this is a photo of a step by step process to download this directory as a zip file](https://lh3.googleusercontent.com/Pg6oODU_Img63CYp_9o5a3pSDCHpcp_g9HouHiOeTiJyHu4oHIX5iVy4uRuruJjrl9X6VKZefJg=s1000 "read")
  1. Click the link shown in the above photo and allow your browser some time to download the file.
  2. Navigate to the directory (folder) that contains your browser's downloads.
  3. Double-click on **directory name** directory (folder).
