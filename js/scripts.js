@@ -7,26 +7,29 @@ function Pizza(size, toppings) {
 
 Pizza.prototype.pizzaPrice = function(price) {
   if (this.size === "small"){
-    this.price += 10;
+    return this.price += 10;
   } else if (this.size === "medium"){
-    this.price += 15;
+    return this.price += 15;
   } else if (this.size === "large"){
-    this.price += 20;
+    return this.price += 20;
   } else if (this.toppings.length > 2){
-    this.price += 1;
+    return this.price += 1;
   } else if (this.toppings.length < 2){
-    this.price += 0;
+    return this.price += 0;
   }
-  return pizzaPrice;
-  console.log();
+  return size, toppings;
 }
+console.log(this.size);
 
 
 
 // Frontend Logic
 $(document).ready(function(){
-  $("form#form").submit(function(event){
-    event.preventDefault();
+
+    $("form#form").submit(function(event){
+      event.preventDefault();
+  
+
 
 
 // var newPizza = Pizza(size, toppings);
