@@ -20,27 +20,23 @@
 
     <div name="toppingsDiv" class="container">
       <h2>Please select your toppings here: </h2>
-      <select id="toppings">
-        <label><input type="option" name="toppings" value="">Toppings</label>
-        <label><input type="option" name="toppings" value="chicken">chicken</label>
-        <label><input type="option" name="toppings" value="meatballs">meatballs</label>
-        <label><input type="option" name="toppings" value="spinach">Spinach</label>
-        <label><input type="option" name="toppings" value="meatLovers">Meat Lovers</label>
-        <label><input type="option" name="toppings" value="veggies">Veggies</label>
-        <label><input type="option" name="toppings" value="anchovies">Anchovies</label>
+      <label><input type="checkbox" name="toppings" value="chicken">chicken</label>
+      <label><input type="checkbox" name="toppings" value="meatballs">meatballs</label>
+      <label><input type="checkbox" name="toppings" value="spinach">Spinach</label>
+      <label><input type="checkbox" name="toppings" value="meatLovers">Meat Lovers</label>
+      <label><input type="checkbox" name="toppings" value="veggies">Veggies</label>
+      <label><input type="checkbox" name="toppings" value="anchovies">Anchovies</label>
     </div>
-    </select>
+
 
 
     <div name="sizeDiv" class="container">
 
       <h2>Please select your size here: </h2>
-      <select id="size">
-        <input type="option" name="size" value="">Size<br>
-        <input type="option" name="size" value="small">Tiny Tim<br>
-        <input type="option" name="size" value="medium">Caught Inbetween<br>
-        <input type="option" name="size" value="large">Large & In Charge<br>
-      </select>
+      <input type="radio" name="size" value="small">Tiny Tim<br>
+      <input type="radio" name="size" value="medium">Caught Inbetween<br>
+      <input type="radio" name="size" value="large">Large & In Charge<br>
+
     </div>
 
     <button class="btn btn-danger" type="submit">Order</button>
