@@ -25,10 +25,12 @@ console.log(this.size);
 
 // Frontend Logic
 $(document).ready(function(){
+  $("form#form").submit(function(event){
+    event.preventDefault();
 
-    $("form#form").submit(function(event){
-      event.preventDefault();
-  
+    let newSize = parseInt($("#size"));
+    let newTopp = parseInt($("#toppings"));
+
 
 
 
