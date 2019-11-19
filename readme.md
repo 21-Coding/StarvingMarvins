@@ -10,6 +10,9 @@ This application gives a brief showing of the power of JavaScript's objects.
 
 ### Specifications
 
+### GH-Pages
+
+https://21-coding.github.io/StarvingMarvins/
 
 |Behavior|Input  |Output|
 |-----------------------------|--------------------------|:--------------:|
