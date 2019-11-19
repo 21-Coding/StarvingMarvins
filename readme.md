@@ -13,13 +13,8 @@ This application gives a brief showing of the power of JavaScript's objects.
 
 |Behavior|Input  |Output|
 |-----------------------------|--------------------------|:--------------:|
-|user will enter Name, Pizza Size, and Toppings | "Charles, Small Pizza, Anchovies"  | Price of order, greeting, receipt |
-| |||
-|| | |
-| || |
-| || |
-|| ||
-|| ||
+|user will enter Pizza Size, and Toppings | "Small Pizza, Cheese"  | Price of order, greeting, receipt |
+
 
 ### Setup/Installation Requirements
 ##### Zip:
