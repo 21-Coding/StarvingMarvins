@@ -38,7 +38,7 @@ Pizza.prototype.getFee = function() {
 $(document).ready(function(){
   $("#form").submit(function(event){
     event.preventDefault();
-    let name = $("#customer").val();
+
     let size = $("input:radio[name=size]:checked").val();
     let newTopp = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
@@ -46,7 +46,8 @@ $(document).ready(function(){
     });
     let newOrder = new Pizza(size, newTopp);
     newOrder.getFee();
-    let checkout = newOrder.total;
+    let checkout = newOrder.fee;
+    console.log();
     $("#toppingsSpan").text(newTopp);
     $("#priceSpan").text(checkout);
     $("#sizeSpan").text(newOrder.size);
