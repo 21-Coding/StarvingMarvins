@@ -48,6 +48,9 @@ $(document).ready(function(){
     newOrder.getFee();
     let checkout = newOrder.fee;
     console.log();
+    $(".hide").fadeIn();
+    $(".outcome").fadeIn();
+    $("#form").slideUp();
     $("#toppingsSpan").text(newTopp);
     $("#priceSpan").text(checkout);
     $("#sizeSpan").text(newOrder.size);
