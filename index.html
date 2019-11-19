@@ -7,32 +7,31 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
   <script src="js/scripts.js" type="text/javascript"></script>
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Staatliches&display=swap" rel="stylesheet">
+
   <title>StarvingMarvins</title>
 </head>
 
 <body>
-  <div class="jumbotron">
-
-  </div>
 
 
   <form id="form">
     <h1>Starving Marvins</h1>
 
-    <div name="toppingsDiv" class="topp container bg-dark">
-      <h2>Please select your toppings here: </h2>
+    <h4>Toppings please: </h4>
+    <div name="toppingsDiv" class="contain bg-dark">
       <label><input type="checkbox" required name="toppings" value="chicken">Cheese</label>
       <label><input type="checkbox" name="toppings" value="meatballs">Meatballs</label>
       <label><input type="checkbox" name="toppings" value="spinach">Spinach</label>
       <label><input type="checkbox" name="toppings" value="meat lovers">Meat Lovers</label>
+      <label><input type="checkbox" name="toppings" value="no cheese">No Cheese</label>
 
     </div>
-    <div name="sizeDiv" class="size container bg-dark">
-      <h2>Please select your size here: </h2>
-      <input type="radio" required name="size" value="small">Small<br>
-      <input type="radio" name="size" value="medium">Medium<br>
-      <input type="radio" name="size" value="large">Large<br>
+    <h4>Size please: </h4>
+    <div name="sizeDiv" class="contain bg-dark">
+      <input class="size" type="radio" required name="size" value="small">Small<br>
+      <input class="size" type="radio" name="size" value="medium">Medium<br>
+      <input class="size" type="radio" name="size" value="large">Large<br>
       <button class="btn-lg btn-secondary" type="submit">Order</button>
     </div>
   </form>
@@ -46,7 +45,7 @@
 
         <p></p>Here at Starving Marvins we are proud suppourters of the Cerebral Palsy Foundation. If you too wish to donate or show suppourt in any way, please click <a href="https://www.yourcpf.org/donate-2/">here.</a></p>
     </div>
-
+    <button id="reset" type="button" name="button">Home</button>
   </div>
 
 

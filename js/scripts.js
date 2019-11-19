@@ -55,7 +55,12 @@ $(document).ready(function(){
     $("#priceSpan").text(checkout);
     $("#sizeSpan").text(newOrder.size);
 
+    $("#reset").click(function(event){
+      event.preventDefault();
+      $("#form").slideDown();
+      $(".outcome").fadeOut();
 
+    })
 
 
 
