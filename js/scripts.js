@@ -1,43 +1,36 @@
 // Backend Logic
+// var total = 0;
+// let toppings = [];
+function Pizza(size, toppings){
 
-function Pizza(size, toppings, price) {
-  this.toppings = toppings,
-  this.size = size,
-  this.price = 10
+  this.size = size;
+  this.toppings = toppings;
 }
 
-function Order(){
-  this.order = [];
-  this.finalOrder = 0;
-}
 
-Pizza.prototype.getFee = function () {
-  var fee = 0;
-  if (this.size === "small"){
-    cost = size + 10;
-    console.log(size);
-  } else if (this.size === "medium"){
-    cost = size + 15;
 
-  } else if (this.size === "large"){
-    cost = size + 20;
-  } else {
-    alert("pick a size");
+
+Pizza.prototype.getFee = function() {
+  let cost = 0;
+  if(this.size === "small") {
+    cost += 10;
+  } else if (this.size === "medium") {
+    cost += 15;
+  } else if (this.size === "large") {
+    cost += 20;
   }
-  return this.total = fee;
+  for (let g=0; g <= this.toppings.length -1; g++) {
+    if(this.toppings.length === 1) {
+      cost +=2;
+    } else if (this.toppings.length === 2) {
+      cost += 4;
+    } else {
+      cost += 8;
+    }
+    return this.fee = cost;
 
-  // } else if (this.toppings.length > 2){
-  //
-  //   var price = size + price + toppings;
-  // } else if (this.toppings.length < 2){
-  //
-  //   var price = size + price + toppings;
-  // }
-
-  console.log(fee);
-};
-
-
+  };
+ };
 
 
 
@@ -45,17 +38,30 @@ Pizza.prototype.getFee = function () {
 $(document).ready(function(){
   $("#form").submit(function(event){
     event.preventDefault();
+    let name = $("#customer").val();
+    let size = $("input:radio[name=size]:checked").val();
+    let newTopp = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      newTopp[newTopp.length] = $(this).val();
+    });
+    let newOrder = new Pizza(size, newTopp);
+    newOrder.getFee();
+    let checkout = newOrder.total;
+    $("#toppingsSpan").text(newTopp);
+    $("#priceSpan").text(checkout);
+    $("#sizeSpan").text(newOrder.size);
 
-    let newSize = parseInt($("#size"));
-    let newTopp = parseInt($("#toppings"));
 
-    let pizzaPrice = new Pizza(size, toppings, price);
-    pizzaPrice.getFee();
-console.log(Pizza);
+
+
+
+
+
+    // pizzaPrice.getFee(this.price);
 
 
 
 // var newPizza = Pizza(size, toppings);
 
-  })
-})
+});
+});

@@ -15,7 +15,7 @@
 
   <form id="form">
     <label for="name">
-      <input placeholder="Name" type="text">
+      <input id="customer" placeholder="Name" type="text">
     </label>
 
     <div name="toppingsDiv" class="container">
@@ -24,8 +24,7 @@
       <label><input type="checkbox" name="toppings" value="meatballs">meatballs</label>
       <label><input type="checkbox" name="toppings" value="spinach">Spinach</label>
       <label><input type="checkbox" name="toppings" value="meatLovers">Meat Lovers</label>
-      <label><input type="checkbox" name="toppings" value="veggies">Veggies</label>
-      <label><input type="checkbox" name="toppings" value="anchovies">Anchovies</label>
+
     </div>
 
 
@@ -33,6 +32,7 @@
     <div name="sizeDiv" class="container">
 
       <h2>Please select your size here: </h2>
+
       <input type="radio" name="size" value="small">Tiny Tim<br>
       <input type="radio" name="size" value="medium">Caught Inbetween<br>
       <input type="radio" name="size" value="large">Large & In Charge<br>
@@ -42,6 +42,14 @@
     <button class="btn btn-danger" type="submit">Order</button>
   </form>
 
+  <div class="outcome">
+    <h5>
+      <span id="nameSpan"></span>
+      <span id="sizeSpan"></span>
+      <span id="priceSpan"></span>
+      <span id="toppingsSpan"></span>
+    </h5>
+  </div>
 
 
 
