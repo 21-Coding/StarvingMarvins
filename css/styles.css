@@ -20,6 +20,13 @@ h4 {
   border-color: red;
 }
 
+.btn-lg {
+    font-family: 'Staatliches', cursive;
+    margin: 10px;
+}
+.btn-sm {
+    font-family: 'Staatliches', cursive;
+}
 
 #form {
   height: 200px;
@@ -34,9 +41,7 @@ h4 {
 .hide {
   display: none;
 }
-.outcome {
-  display: none;
-}
+
 .contain {
   font-size: 12pt;
   font-family: 'Pacifico', cursive;
@@ -44,12 +49,9 @@ h4 {
   border-right: solid;
   border-color: green;
 }
-.btn-lg {
-  margin: 10px;
-
-}
 
     .outcome {
+      display: none;
       width: 200px;
       height: 40px;
       position: relative;
